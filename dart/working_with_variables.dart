@@ -3,8 +3,9 @@ void main(){
     int idade = 10;
     double salario = 1616.10;
     bool isAlive = true;
-    print (nameCompleto);
-    print (idade);
-    print (salario);
-    print (isAlive);
+
+    Object nome2 = 'Jose da silva';
+    dynamic nome3 = 'Jose da Silva';
+    nome3 = 1;
+    print (nome3);
 }
