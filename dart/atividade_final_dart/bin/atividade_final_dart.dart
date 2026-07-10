@@ -85,8 +85,8 @@ Future<void> main(List<String> arguments) async {
     }
   } on FileSystemException catch (erro) {
     print(erro.message);
-  } catch (_) {
-    print('Falha ao processar o relatório.');
+    } catch (e, stackTrace) {
+      print('Error: $e, $stackTrace');
   }
 }
 

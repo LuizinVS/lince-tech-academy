@@ -212,7 +212,7 @@ class ProcessadorService {
       }
 
       final String estado = registro.estado;
-      final int ano = registro.dataHora.year;
+      final int ano = registro.ano;
 
       agrupados.putIfAbsent(estado, () => <int, List<double>>{});
       agrupados[estado]!.putIfAbsent(ano, () => <double>[]);
@@ -237,7 +237,7 @@ class ProcessadorService {
       }
 
       final String estado = registro.estado;
-      final int mes = registro.dataHora.month;
+      final int mes = registro.mes;
 
       agrupados.putIfAbsent(estado, () => <int, List<double>>{});
       agrupados[estado]!.putIfAbsent(mes, () => <double>[]);
@@ -255,7 +255,7 @@ class ProcessadorService {
 
     for (final RegistroClima registro in registros) {
       final String estado = registro.estado;
-      final int ano = registro.dataHora.year;
+      final int ano = registro.ano;
       final String valor = registro.direcaoVentoGraus.toStringAsFixed(1);
 
       contagem.putIfAbsent(estado, () => <int, Map<String, int>>{});
@@ -274,7 +274,7 @@ class ProcessadorService {
 
     for (final RegistroClima registro in registros) {
       final String estado = registro.estado;
-      final int mes = registro.dataHora.month;
+      final int mes = registro.mes;
       final String valor = registro.direcaoVentoGraus.toStringAsFixed(1);
 
       contagem.putIfAbsent(estado, () => <int, Map<String, int>>{});
