@@ -1,14 +1,10 @@
-# Cache e arquivos de ferramentas do Dart/Flutter
 .dart_tool/
 .packages
 .pub-cache/
 .pub/
 build/
 
-# Arquivos de configuração do VS Code
 .vscode/
 *.code-workspace
-
-# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
